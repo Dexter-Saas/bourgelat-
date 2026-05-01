@@ -39,7 +39,7 @@ function formatResponse(result) {
   const { analysis, triage, treatment_context } = result;
   let msg = "";
   msg += "BOURGELAT ASSESSMENT\n";
-  msg += "━━━━━━━━━━━━━━━━━━━━\n\n";
+  msg += "--------------------\n";
   msg += "BCS Score: " + analysis.bcs_score + "/5\n";
   msg += "Conditions: " + analysis.conditions.join(", ") + "\n";
   msg += "Confidence: " + Math.round(analysis.confidence * 100) + "%\n\n";
