@@ -1,0 +1,66 @@
+[
+  {
+    "score": 1,
+    "label": "Emaciated",
+    "keywords": [
+      "emaciated",
+      "all bones visible",
+      "no muscle"
+    ],
+    "description": "All bony structures extremely prominent, no fat or muscle cover, severe emaciation",
+    "action": "Emergency - immediate vet + emergency nutrition intervention required",
+    "urgency": "emergency"
+  },
+  {
+    "score": 2,
+    "label": "Thin",
+    "keywords": [
+      "thin",
+      "ribs visible",
+      "spine visible",
+      "hip bones visible"
+    ],
+    "description": "Ribs, spine and hip bones clearly visible, minimal muscle cover, poor condition",
+    "action": "Urgent - feed intervention required immediately, vet review recommended",
+    "urgency": "high"
+  },
+  {
+    "score": 3,
+    "label": "Ideal",
+    "keywords": [
+      "ideal",
+      "ribs felt not seen",
+      "good muscle",
+      "healthy"
+    ],
+    "description": "Ribs palpable but not visible, good muscle cover, slight fat cover, optimal condition",
+    "action": "Maintain - current feeding and management is appropriate",
+    "urgency": "none"
+  },
+  {
+    "score": 4,
+    "label": "Fat",
+    "keywords": [
+      "fat",
+      "overweight",
+      "rounded",
+      "ribs hard to feel"
+    ],
+    "description": "Ribs difficult to palpate, fat deposits visible around tail head and ribs, rounded appearance",
+    "action": "Reduce - decrease feed energy, monitor closely to prevent obesity",
+    "urgency": "low"
+  },
+  {
+    "score": 5,
+    "label": "Obese",
+    "keywords": [
+      "obese",
+      "very fat",
+      "bones not palpable",
+      "heavy deposits"
+    ],
+    "description": "Obese, bony structures not palpable under heavy fat deposits, severe overcondition",
+    "action": "Emergency diet - immediate feed reduction and vet consultation required",
+    "urgency": "high"
+  }
+]

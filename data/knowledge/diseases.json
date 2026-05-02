@@ -1,0 +1,365 @@
+[
+  {
+    "name": "Foot-and-Mouth Disease",
+    "category": "viral",
+    "keywords": [
+      "foot-and-mouth disease",
+      "excessive drooling",
+      "oral blisters",
+      "lameness"
+    ],
+    "description": "Foot-and-Mouth Disease (viral) - Visual signs: excessive drooling, oral blisters, lameness",
+    "treatment": "Actions: isolate, soft feed, clean lesions | Drugs: none | Notes: no cure",
+    "escalate_if": "herd spread, severe lameness",
+    "urgency": "emergency",
+    "confidence_weights": {
+      "excessive drooling": 0.9,
+      "oral blisters": 0.95,
+      "lameness": 0.85
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Lumpy Skin Disease",
+    "category": "viral",
+    "keywords": [
+      "lumpy skin disease",
+      "skin nodules",
+      "weight loss"
+    ],
+    "description": "Lumpy Skin Disease (viral) - Visual signs: skin nodules, weight loss",
+    "treatment": "Actions: isolate, fly control | Drugs: antibiotics | Notes: secondary infections",
+    "escalate_if": "rapid spread",
+    "urgency": "high",
+    "confidence_weights": {
+      "skin nodules": 0.95,
+      "weight loss": 0.75
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Foot Rot",
+    "category": "bacterial",
+    "keywords": [
+      "foot rot",
+      "hoof swelling",
+      "limping"
+    ],
+    "description": "Foot Rot (bacterial) - Visual signs: hoof swelling, limping",
+    "treatment": "Actions: clean hoof | Drugs: oxytetracycline | Notes: none",
+    "escalate_if": "no improvement 3 days",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "hoof swelling": 0.9,
+      "limping": 0.95
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Mastitis",
+    "category": "bacterial",
+    "keywords": [
+      "mastitis",
+      "swollen udder",
+      "abnormal milk"
+    ],
+    "description": "Mastitis (bacterial) - Visual signs: swollen udder, abnormal milk",
+    "treatment": "Actions: frequent milking | Drugs: intramammary antibiotics | Notes: none",
+    "escalate_if": "fever",
+    "urgency": "high",
+    "confidence_weights": {
+      "swollen udder": 0.95,
+      "abnormal milk": 0.85
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Bloat",
+    "category": "digestive",
+    "keywords": [
+      "bloat",
+      "distended left abdomen",
+      "restlessness"
+    ],
+    "description": "Bloat (digestive) - Visual signs: distended left abdomen, restlessness",
+    "treatment": "Actions: walk animal, give oil | Drugs: none | Notes: none",
+    "escalate_if": "breathing difficulty",
+    "urgency": "emergency",
+    "confidence_weights": {
+      "distended left abdomen": 0.98,
+      "restlessness": 0.85
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Tick Infestation",
+    "category": "parasitic",
+    "keywords": [
+      "tick infestation",
+      "visible ticks",
+      "hair loss"
+    ],
+    "description": "Tick Infestation (parasitic) - Visual signs: visible ticks, hair loss",
+    "treatment": "Actions: manual removal | Drugs: acaricides | Notes: none",
+    "escalate_if": "heavy infestation",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "visible ticks": 0.95,
+      "hair loss": 0.8
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Ringworm",
+    "category": "fungal",
+    "keywords": [
+      "ringworm",
+      "circular bald patches"
+    ],
+    "description": "Ringworm (fungal) - Visual signs: circular bald patches",
+    "treatment": "Actions: apply antifungal | Drugs: none | Notes: none",
+    "escalate_if": "spread",
+    "urgency": "low",
+    "confidence_weights": {
+      "circular bald patches": 0.95
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Anthrax",
+    "category": "bacterial",
+    "keywords": [
+      "anthrax",
+      "sudden death",
+      "bleeding openings"
+    ],
+    "description": "Anthrax (bacterial) - Visual signs: sudden death, bleeding openings",
+    "treatment": "Actions: quarantine | Drugs: none | Notes: zoonotic - human risk",
+    "escalate_if": "any suspicion",
+    "urgency": "emergency",
+    "confidence_weights": {
+      "sudden death": 1.0,
+      "bleeding openings": 0.95
+    },
+    "zoonotic": true
+  },
+  {
+    "name": "Dermatophilosis",
+    "category": "bacterial",
+    "keywords": [
+      "dermatophilosis",
+      "crusty scabs"
+    ],
+    "description": "Dermatophilosis (bacterial) - Visual signs: crusty scabs",
+    "treatment": "Actions: keep dry | Drugs: oxytetracycline | Notes: none",
+    "escalate_if": "spread",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "crusty scabs": 0.95
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Mange",
+    "category": "parasitic",
+    "keywords": [
+      "mange",
+      "intense scratching"
+    ],
+    "description": "Mange (parasitic) - Visual signs: intense scratching",
+    "treatment": "Actions: isolate | Drugs: ivermectin | Notes: none",
+    "escalate_if": "spread",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "intense scratching": 0.9
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Pink Eye",
+    "category": "bacterial",
+    "keywords": [
+      "pink eye",
+      "cloudy eye",
+      "pinkeye"
+    ],
+    "description": "Pink Eye (bacterial) - Visual signs: cloudy eye",
+    "treatment": "Actions: shade | Drugs: oxytetracycline | Notes: none",
+    "escalate_if": "blindness",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "cloudy eye": 0.95
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "CBPP",
+    "category": "bacterial",
+    "keywords": [
+      "cbpp",
+      "contagious bovine pleuropneumonia",
+      "labored breathing"
+    ],
+    "description": "CBPP (bacterial) - Visual signs: labored breathing",
+    "treatment": "Actions: isolate | Drugs: antibiotics | Notes: none",
+    "escalate_if": "herd outbreak",
+    "urgency": "high",
+    "confidence_weights": {
+      "labored breathing": 0.9
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Pneumonia",
+    "category": "respiratory",
+    "keywords": [
+      "pneumonia",
+      "coughing",
+      "nasal discharge"
+    ],
+    "description": "Pneumonia (respiratory) - Visual signs: coughing",
+    "treatment": "Actions: keep warm | Drugs: antibiotics | Notes: none",
+    "escalate_if": "worsening breathing",
+    "urgency": "high",
+    "confidence_weights": {
+      "coughing": 0.85
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Brucellosis",
+    "category": "bacterial",
+    "keywords": [
+      "brucellosis",
+      "abortion"
+    ],
+    "description": "Brucellosis (bacterial) - Visual signs: abortion",
+    "treatment": "Actions: isolate | Drugs: none | Notes: zoonotic - human risk",
+    "escalate_if": "any abortion",
+    "urgency": "high",
+    "confidence_weights": {
+      "abortion": 0.95
+    },
+    "zoonotic": true
+  },
+  {
+    "name": "Milk Fever",
+    "category": "metabolic",
+    "keywords": [
+      "milk fever",
+      "unable to stand",
+      "hypocalcemia"
+    ],
+    "description": "Milk Fever (metabolic) - Visual signs: unable to stand",
+    "treatment": "Actions: none | Drugs: calcium | Notes: none",
+    "escalate_if": "no response",
+    "urgency": "emergency",
+    "confidence_weights": {
+      "unable to stand": 0.95
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Ketosis",
+    "category": "metabolic",
+    "keywords": [
+      "ketosis",
+      "weight loss",
+      "dull"
+    ],
+    "description": "Ketosis (metabolic) - Visual signs: weight loss",
+    "treatment": "Actions: none | Drugs: propylene glycol | Notes: none",
+    "escalate_if": "severe loss",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "weight loss": 0.8
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Trypanosomiasis",
+    "category": "parasitic",
+    "keywords": [
+      "trypanosomiasis",
+      "nagana",
+      "weight loss",
+      "anemia"
+    ],
+    "description": "Trypanosomiasis (parasitic) - Visual signs: weight loss",
+    "treatment": "Actions: none | Drugs: diminazene | Notes: none",
+    "escalate_if": "anemia",
+    "urgency": "high",
+    "confidence_weights": {
+      "weight loss": 0.9
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Babesiosis",
+    "category": "parasitic",
+    "keywords": [
+      "babesiosis",
+      "red urine",
+      "redwater"
+    ],
+    "description": "Babesiosis (parasitic) - Visual signs: red urine",
+    "treatment": "Actions: none | Drugs: imidocarb | Notes: none",
+    "escalate_if": "collapse",
+    "urgency": "high",
+    "confidence_weights": {
+      "red urine": 0.95
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Blackleg",
+    "category": "bacterial",
+    "keywords": [
+      "blackleg",
+      "sudden lameness",
+      "clostridial"
+    ],
+    "description": "Blackleg (bacterial) - Visual signs: sudden lameness",
+    "treatment": "Actions: none | Drugs: penicillin | Notes: none",
+    "escalate_if": "sudden deaths",
+    "urgency": "emergency",
+    "confidence_weights": {
+      "sudden lameness": 0.9
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Liver Fluke",
+    "category": "parasitic",
+    "keywords": [
+      "liver fluke",
+      "bottle jaw",
+      "fasciolosis"
+    ],
+    "description": "Liver Fluke (parasitic) - Visual signs: bottle jaw",
+    "treatment": "Actions: none | Drugs: triclabendazole | Notes: none",
+    "escalate_if": "severe swelling",
+    "urgency": "moderate",
+    "confidence_weights": {
+      "bottle jaw": 0.9
+    },
+    "zoonotic": false
+  },
+  {
+    "name": "Hardware Disease",
+    "category": "digestive",
+    "keywords": [
+      "hardware disease",
+      "traumatic reticuloperitonitis",
+      "arched back"
+    ],
+    "description": "Hardware Disease (digestive) - Visual signs: arched back",
+    "treatment": "Actions: magnet | Drugs: none | Notes: none",
+    "escalate_if": "pain worsens",
+    "urgency": "high",
+    "confidence_weights": {
+      "arched back": 0.9
+    },
+    "zoonotic": false
+  }
+]
