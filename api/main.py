@@ -26,8 +26,8 @@ def root():
 @app.post("/analyze")
 async def analyze(
     video: UploadFile = File(...),
-    animal_id: str = Form(...),
-    farmer_phone: str = Form(...)
+    animal_id: str = Form("unknown"),
+    farmer_phone: str = Form("unknown")
 ):
     session = init_db()
 
